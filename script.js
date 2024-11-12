@@ -7,6 +7,8 @@ agendamento.addEventListener("change", function () {
   formContainer.innerHTML = "";
 
   let iframe = document.createElement("iframe");
+  let calendarFrame = document.createElement("iframe");
+
   iframe.allowFullscreen = true;
 
   switch (cursoSelecionado) {
@@ -25,6 +27,8 @@ agendamento.addEventListener("change", function () {
     case "direito":
       iframe.src =
         "https://docs.google.com/forms/d/e/1FAIpQLSd8HzWzMF1TdxbwTAkFAtTzRIMqESd10iwovNMZQt6NrGnajA/viewform?embedded=true";
+      calendarFrame.src =
+        "https://calendar.google.com/calendar/embed?src=c_710de18573fe946dde33582ec808df8b523511cbb705b6e051f90c494dd219b0%40group.calendar.google.com&ctz=America%2FSao_Paulo";
       break;
     case "ed_fisica":
       iframe.src =
@@ -45,6 +49,8 @@ agendamento.addEventListener("change", function () {
     case "gestao_ti":
       iframe.src =
         "https://docs.google.com/forms/d/e/1FAIpQLSc7vrT8v6vjg56dWXxi8S5yPpSRYFKV4JX9ESeTWtcfdGnoUg/viewform?embedded=true";
+      calendarFrame.src =
+        "https://calendar.google.com/calendar/embed?src=c_4babce7714a53aa5e4c419de26352a49fd266621c3e1286af2600b0871df317d%40group.calendar.google.com&ctz=America%2FSao_Paulo";
       break;
     case "letras":
       iframe.src =
@@ -69,10 +75,14 @@ agendamento.addEventListener("change", function () {
     case "psicologia":
       iframe.src =
         "https://docs.google.com/forms/d/e/1FAIpQLSeNJ84bviYGUKiIPG7cXoewfelaXut896ymR-U77WMm3o8_bQ/viewform?embedded=true";
+      calendarFrame.src =
+        "https://calendar.google.com/calendar/embed?src=c_110ce141b01af24debdbc21935b07b0f9635c7c209bfe7ca1a371dfb0d0e9950%40group.calendar.google.com&ctz=America%2FSao_Paulo";
       break;
     default:
       iframe = null;
   }
 
   if (iframe) formContainer.appendChild(iframe);
+
+  if (calendarFrame) formContainer.appendChild(calendarFrame);
 });
