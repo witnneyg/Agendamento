@@ -15,6 +15,8 @@ agendamento.addEventListener("change", function () {
     case "administracao":
       iframe.src =
         "https://docs.google.com/forms/d/e/1FAIpQLSfZ-EafjDkfrXU7nxOlb6pSHcXgGEDqimYBwcRJ6cJfzgvGYQ/viewform?embedded=true";
+      calendarFrame.src =
+        "https://calendar.google.com/calendar/embed?src=c_899178fb61ee3e449bbe2e1dce3a39b8bf916c7b6ceb9fb0d755f5282ba360f4%40group.calendar.google.com&ctz=America%2FSao_Paulo";
       break;
     case "agronomia":
       iframe.src =
