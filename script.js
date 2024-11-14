@@ -19,6 +19,7 @@ agendamento.addEventListener("change", function () {
   calendarContainer.style.marginBottom = "8rem";
 
   calendarLink.style.fontSize = "1rem";
+  calendarLink.style.marginTop = "1rem";
   calendarLink.target = "_blank";
 
   iframe.allowFullscreen = true;
