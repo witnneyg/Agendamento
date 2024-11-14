@@ -9,7 +9,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #a5fa9d;
+  background: linear-gradient(to right, #a5fa9d, #6dbf7b);
 }
 
 iframe {
