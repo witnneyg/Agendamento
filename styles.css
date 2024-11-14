@@ -42,6 +42,4 @@ iframe {
 iframe[src*="calendar.google.com"] {
   height: 600px;
   width: 80%;
-  margin-bottom: 10rem;
-  padding: 30px;
 }
